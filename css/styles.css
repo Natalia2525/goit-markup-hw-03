@@ -14,6 +14,35 @@
     --logo-color: #000000;
 }
 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+  }
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
 body {
     color: var(--primary-text-color);
     background: #E5E5E5;
@@ -22,23 +51,34 @@ body {
     font-size: 14px;
     line-height: 1.14;
 }
-.link {
-    text-decoration: none;
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-ul{
-    list-style-type: none;
-}
+/* Логотип */ 
 
-/* Логотип */
+.header .container {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
+    margin-right: 85px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+
     color: var(--logo-color);
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 }
+    
 
 .logo-web {
     color: var(--accent-color);
@@ -46,7 +86,22 @@ ul{
 
 /* Навигация */
 
+.navigation {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav-list:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -58,6 +113,15 @@ ul{
 }
 
 /* КОНТАКТЫ */
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list:not(:last-child) {
+    margin-right: 30px;
+}
 
 .contacts .link {
     color: var(--primary-text-color);
