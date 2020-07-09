@@ -1,0 +1,193 @@
+/* цвет заголов текста #212121 */
+/* основной цвет текста белый #FFFFFF  */
+/* цвет основного текста #757575 */
+/* акцент #2196F3*/
+/* цвет логотипа #000000 */
+
+:root {
+    --main-font:"Roboto", sans-serif;
+    --secondary-font:"Raleway", sans-serif;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --primary-white-color: #ffffff;
+    --accent-color: #2196F3;
+    --logo-color: #000000;
+}
+
+body {
+    color: var(--primary-text-color);
+    background: #E5E5E5;
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.link {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Логотип */
+
+.logo {
+    color: var(--logo-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+/* Навигация */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* КОНТАКТЫ */
+
+.contacts .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.contacts .link:hover {
+    color: var(--accent-color);
+}
+
+/*   СЕКЦИИ HERO*/
+
+.hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--primary-text-color);
+}
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/*   СЕКЦИЯ О НАС */
+
+.about-us-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+
+.about-us-text {
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+/*  СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ (работа)*/
+
+.title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.work-item {
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*  Наша команда  */
+
+.team-list-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team-list-item {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+/* Футер */
+
+.logo-studio {
+    color: var(--primary-white-color);
+}
+
+.address .link {
+    color: var(--primary-white-color);
+    line-height: 1.71;
+}
+
+.mail .link,
+.tel .link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+}
+
+.subtitle {
+    color: var(--primary-white-color);
+    font-weight: 700;
+}
+
+
+/*  Вкладка  Портфолио */
+/*  Фильтр */
+
+.btn {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background: #F5F4FA;
+}
+.btn:hover {
+    background: var(--accent-color);
+}
+
+/*  Список Примеры */
+
+.portfolio-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+ }
+
+ .portfolio-list .text {
+     color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+ }
+
