@@ -282,21 +282,18 @@ body {
     padding-bottom: 94px;
     justify-content: center;
 }
+.company-list-item .link {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: solid #afb1b8 1px;
+    border-radius: 4px;
+}
 
 .company-list-item:not(:last-child) {
     margin-right: 30px;
 }
-
-.company-list-item .link{
-    width: 170px;
-    height: 90px;
-}
-
-.images {
-    display: block;
-    margin: auto;
-}
-
 
 /* Футер */
 
@@ -337,7 +334,6 @@ body {
     margin-top: 9px;
 }
 
-
 .mail .link,
 .tel .link {
     color: rgba(255, 255, 255, 0.6);
@@ -370,13 +366,27 @@ body {
 /*  Вкладка  Портфолио */
 /*  Фильтр */
 
+.filter-list {
+    display: flex;
+    padding-top: 93px;
+    justify-content: center;
+}
+
+.filter-list li:not(:last-child) {
+    margin-right: 9px;
+}
 .btn {
+    width: 128px;
+    height: 38px;
     color: var(--title-text-color);
+    border-color: transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .btn:hover {
     background: var(--accent-color);
@@ -384,17 +394,37 @@ body {
 
 /*  Список Примеры */
 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 94px;
+}
+
 .portfolio-title {
+    margin-top: 20px;
+    
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
  }
+ .portfolio-list {
+    width: 370px;
+ }
+
+ .portfolio-list:not(:nth-child(3n)) {
+     margin-right: 30px;
+ }
+
+ .portfolio-list:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
 
  .portfolio-list .text {
-     color: var(--primary-text-color);
+    margin-top: 4px;
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.87;
  }
-
